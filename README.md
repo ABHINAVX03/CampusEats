@@ -2,7 +2,7 @@
 
 A campus food-ordering platform built as a set of independent microservices, developed incrementally across the **CS 543 – Web Services** course at IIIT Vadodara.
 
-**Team:** Abhinav Gupta (Lead), Nandan Kabra, Neeraj Sharma, Priya
+**Team:** Abhinav Gupta , Nandan Kabra, Neeraj Sharma, Priya (Lead)
 **Instructor:** Dr. Pramit Mazumdar
 **Repository:** [github.com/ABHINAVX03/CampusEats](https://github.com/ABHINAVX03/CampusEats)
 
@@ -86,10 +86,10 @@ For now, this repo contains only design documents and the HTTP fundamentals from
 
 | Name | Role / Focus | GitHub |
 | :--- | :--- | :--- |
-| Abhinav Gupta | Lead, architecture | [@ABHINAVX03](https://github.com/ABHINAVX03) |
+| Abhinav Gupta | architecture | [@ABHINAVX03](https://github.com/ABHINAVX03) |
 | Nandan Kabra | Backend services | @... |
 | Neeraj Sharma | Frontend / testing | @... |
-| Priya | Documentation, APIs | @... |
+| Priya (Lead) | Documentation, APIs | @... |
 
 ---
 
