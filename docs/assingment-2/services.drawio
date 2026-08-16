@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2026-08-15T00:00:00.000Z" agent="Claude" version="24.0.0" type="device">
+  <diagram id="services-diagram" name="Services">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1240" pageHeight="520" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="svcOrders" value="&lt;b&gt;Orders&lt;/b&gt;&lt;br&gt;Owns: carts, cart_items, orders, order_items&lt;br&gt;Team: Abhinav" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;verticalAlign=middle;fontSize=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="340" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="svcAccounts" value="&lt;b&gt;Accounts&lt;/b&gt;&lt;br&gt;Owns: users, addresses&lt;br&gt;Team: Neeraj" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;verticalAlign=middle;fontSize=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="20" y="240" width="240" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="svcCatalogue" value="&lt;b&gt;Catalogue&lt;/b&gt;&lt;br&gt;Owns: restaurants, menu_items&lt;br&gt;Team: Nandan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=middle;fontSize=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="240" width="240" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="svcPayments" value="&lt;b&gt;Payments&lt;/b&gt;&lt;br&gt;Owns: transactions&lt;br&gt;Team: Abhinav" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=center;verticalAlign=middle;fontSize=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="580" y="240" width="220" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="svcDelivery" value="&lt;b&gt;Delivery&lt;/b&gt;&lt;br&gt;Owns: riders, assignments&lt;br&gt;Team: Priya" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;verticalAlign=middle;fontSize=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="840" y="240" width="240" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="svcNotifications" value="&lt;b&gt;Notifications&lt;/b&gt;&lt;br&gt;Owns: notifications&lt;br&gt;Team: Priya" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=center;verticalAlign=middle;fontSize=12;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="880" y="420" width="240" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="se1" value="getAddress" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="svcOrders" target="svcAccounts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="se2" value="checkItem" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.4;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="svcOrders" target="svcCatalogue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="se3" value="charge / refund" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.6;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="svcOrders" target="svcPayments">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="se4" value="assignRider" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#ffffff;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="svcOrders" target="svcDelivery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="se5" value="sendNotification" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#ffffff;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="svcOrders" target="svcNotifications">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="85" />
+              <mxPoint x="1150" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="se6" value="sendNotification" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="svcDelivery" target="svcNotifications">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
