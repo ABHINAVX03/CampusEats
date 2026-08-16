@@ -7,7 +7,7 @@
 
 ## Method
 
-I opened the page in Chrome, opened **DevTools → Network**, checked **Disable cache**, then performed a hard reload while DevTools remained open. The figures below are the totals displayed by that reload's Network panel. Supporting DevTools screenshots are retained in `docs/assignment-1/`.
+I opened the page in Chrome, opened **DevTools → Network**, checked **Disable cache**, then performed a hard reload while DevTools remained open. The figures below are the totals displayed by that reload's Network panel. Supporting DevTools screenshots are retained in `docs/http-analysis-evidence/`.
 
 ---
 
